@@ -29,7 +29,7 @@ createApp({
                 this.todoItem = '';
             });
 
-        }
+        },
 
     },
     mounted() {
