@@ -13,13 +13,13 @@ createApp({
                 .then(response => {
                     this.todoList = response.data;
                 })
-
         },
-
         addTodo() {
+
             const data = {
                 todoItem: this.todoItem
             };
+
             axios.post('server.php', data,
                 {
                     headers: { 'Content-Type': 'multipart/form-data' }
@@ -27,12 +27,11 @@ createApp({
             ).then(response => {
                 this.todoList = response.data;
                 this.todoItem = '';
-            });
-
-        },
-
+            })
+        }
     },
     mounted() {
         this.readList();
     }
 }).mount('#app')
+

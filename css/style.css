@@ -1,3 +1,12 @@
-.ms_color {
-    background-color: lightcoral;
+.ms_style {
+    background-color: lightsalmon;
+
+}
+
+.ms_style2 {
+    background-color: rgb(184, 80, 80);
+}
+
+.ms_text_color {
+    color: crimson;
 }
